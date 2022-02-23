@@ -4,11 +4,29 @@ import java.util.Date;
 
 public abstract class ContaComun {
 	
-	int nrConta;
-	Date dtAbertura;
-	Date dtEncerramento;
-	Double saldo;
+	private int nrConta;
+	private Date dtAbertura;
+	private Date dtEncerramento;
+	private Double saldo;
 	
+
+	
+	public int getNrConta() {
+		return nrConta;
+	}
+
+
+
+	public Date getDtAbertura() {
+		return dtAbertura;
+	}
+
+
+
+	public Date getDtEncerramento() {
+		return dtEncerramento;
+	}
+
 	public void sacar() {
 		
 	}
