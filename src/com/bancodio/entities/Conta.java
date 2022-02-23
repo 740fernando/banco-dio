@@ -2,7 +2,7 @@ package com.bancodio.entities;
 
 import java.util.Date;
 
-public abstract class ContaComun {
+public abstract class Conta {
 	
 	private int nrConta;
 	private Date dtAbertura;

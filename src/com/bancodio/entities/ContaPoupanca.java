@@ -1,6 +1,6 @@
 package com.bancodio.entities;
 
-public class ContaCorrente extends Conta {
+public class ContaPoupanca extends Conta {
 
 	@Override
 	public void sacar() {
@@ -19,5 +19,4 @@ public class ContaCorrente extends Conta {
 		// TODO Auto-generated method stub
 		super.transferir();
 	}
-
 }
