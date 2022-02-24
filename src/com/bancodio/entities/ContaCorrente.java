@@ -2,24 +2,13 @@ package com.bancodio.entities;
 
 public class ContaCorrente extends Conta {
 
-	
-	
-	@Override
-	public void sacar() {
-		// TODO Auto-generated method stub
-		super.sacar();
+	public ContaCorrente(Pessoa pessoa) {
+		super(pessoa);
 	}
 
 	@Override
-	public void depositar() {
-		// TODO Auto-generated method stub
-		super.depositar();
+	public void imprimirExtrato() {
+		System.out.println("--- Extrato Conta Corrente ---");
+		super.imprimirInfosComuns();
 	}
-
-	@Override
-	public void transferir() {
-		// TODO Auto-generated method stub
-		super.transferir();
-	}
-
 }

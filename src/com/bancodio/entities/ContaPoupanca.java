@@ -1,22 +1,14 @@
 package com.bancodio.entities;
 
 public class ContaPoupanca extends Conta {
-
-	@Override
-	public void sacar() {
-		// TODO Auto-generated method stub
-		super.sacar();
+	
+	public ContaPoupanca(Pessoa pessoa) {
+		super(pessoa);
 	}
 
 	@Override
-	public void depositar() {
-		// TODO Auto-generated method stub
-		super.depositar();
-	}
-
-	@Override
-	public void transferir() {
-		// TODO Auto-generated method stub
-		super.transferir();
+	public void imprimirExtrato() {
+		System.out.println("--- Extrato Conta Poupança ---");
+		super.imprimirInfosComuns();
 	}
 }
