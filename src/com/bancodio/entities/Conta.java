@@ -37,7 +37,10 @@ public abstract class Conta {
 		return pessoa;
 	}
 
-	public void sacar(Double valor) {
+	public void sacar(Double valor) throws Exception {
+		if(saldo==0) {
+			throw new Exception("Saldo insuficiente");
+		}
 		saldo -= valor;
 	}
 
@@ -46,7 +49,11 @@ public abstract class Conta {
 	}
 
 	public void transferir(double valor, Conta contaDestino) {
-		this.sacar(valor);
+		try {
+			this.sacar(valor);
+		} catch (Exception e) {
+			e.getMessage();
+		}
 		contaDestino.depositar(valor);
 	}
 	protected void imprimirInfosComuns() {
